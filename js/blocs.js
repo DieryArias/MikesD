@@ -88,6 +88,7 @@ function stickyNavToggle() {
     $(window).scrollTop() > t ? ($(".sticky-nav").addClass(e), "sticky" == e && $(".page-container").css("padding-top", $(".sticky-nav").height())) : ($(".sticky-nav").removeClass(e).removeAttr("style"), $(".page-container").removeAttr("style"))
 }
 
+
 function hideAll() {
     $(".animated").each(function(t) {
         $(this).closest(".hero").length || $(this).removeClass("animated").addClass("hideMe")
